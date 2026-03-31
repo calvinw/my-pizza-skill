@@ -28,13 +28,15 @@ The `SKILL.md` frontmatter includes a `name` and `description`. The description 
 
 ### After Updating the Skill — Run the Sync
 
-When `SKILL.md` is changed, you must sync it so every AI tool in the codespace picks up the new version. Run:
+**You (the agent) are responsible for syncing the skill after any change to `SKILL.md`.** When the skill is updated, you must run:
 
 ```bash
 bash scripts/sync-skills.sh
 ```
 
 This copies the skill files from `.skillshare/skills/` out to each tool's config directory. If you skip this step, other tools will still be running the old version of the skill.
+
+**After syncing, tell the student they need to restart the skill** to see the changes take effect. See [CLAUDE.md](CLAUDE.md) for how to explain this to non-programmers.
 
 ---
 

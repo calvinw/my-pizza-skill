@@ -25,6 +25,16 @@ Every time you run a command or take an action behind the scenes, explain it in 
 - **After:** Tell the student what the result means in plain language.
 - **Never show raw data without explanation.** If a query returns numbers, explain what those numbers represent.
 
+### When You Update the Skill
+
+After you update `SKILL.md` and run the sync script, explain to the student in simple terms:
+
+- **What you did:** "I've updated the skill with [the changes we discussed]."
+- **What happens automatically:** "I've synced the skill so all the AI tools can see the new version."
+- **What the student needs to do:** "To see the changes in action, you'll need to start the skill over by typing `/pizza-ordering` again."
+
+Keep it simple. Don't mention technical details like config directories or file syncing — just tell them the skill has been updated and they need to restart it.
+
 ### After Every Task The Agent Completes
 
 After an task is completed provide exactly 3 points:
